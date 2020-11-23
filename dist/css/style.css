@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 /*
   Color Variables
   ---------------
@@ -112,8 +112,10 @@ body {
       .navbar__nav__list__item {
         list-style: none;
         padding: 0 0 0 4.8rem; }
-        .navbar__nav__list__item .active .btn {
-          background-color: #29274e; }
+        .navbar__nav__list__item .active {
+          color: #157fcc; }
+          .navbar__nav__list__item .active .btn {
+            background-color: #29274e; }
         .navbar__nav__list__item__link {
           font-size: 1.2rem;
           font-weight: 500;
@@ -266,7 +268,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 200;
   outline: none;
   border: 0px;
   border-radius: 0.3rem;
@@ -466,8 +468,18 @@ body {
         margin-bottom: 1.6rem; }
 
 .blog {
-  padding: 12rem 7.2rem;
-  width: 100%; }
+  padding: 12rem 7.2rem 25rem 7.2rem;
+  width: 100%;
+  position: relative; }
+  .blog__image__1 {
+    position: absolute;
+    z-index: -1;
+    right: 28rem; }
+  .blog__image__2 {
+    position: absolute;
+    z-index: -1;
+    left: -2rem;
+    bottom: 5rem; }
   .blog__row {
     display: flex;
     justify-content: space-between;
@@ -517,3 +529,102 @@ body {
     .footer__bottom__col .paragraph {
       color: #ffffff;
       font-weight: 300; }
+
+.product-header {
+  padding: 0.8rem 16rem;
+  height: 86vh;
+  overflow-x: hidden; }
+  .product-header__bg {
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    right: 0; }
+    .product-header__bg-2 {
+      position: absolute;
+      z-index: -3;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden; }
+      .product-header__bg-2__img {
+        width: 98.5vw; }
+  .product-header__img {
+    position: absolute;
+    z-index: -3;
+    top: 2rem;
+    right: 0rem; }
+  .product-header__content {
+    width: 60rem;
+    margin-top: 11rem; }
+    .product-header__content > * {
+      margin-bottom: 1.6rem; }
+    .product-header__content .heading-1 {
+      color: #29274e; }
+    .product-header__content .btn {
+      background-color: #3abf7c;
+      font-weight: 400;
+      text-transform: capitalize; }
+    .product-header__content__button {
+      margin-top: 3.2rem; }
+      .product-header__content__button .btn {
+        height: unset;
+        padding: 1.6rem 3.2rem; }
+        .product-header__content__button .btn:first-of-type {
+          margin-right: 3.2rem; }
+        .product-header__content__button .btn:last-of-type {
+          background-color: #c4c4c4; }
+
+.signup {
+  padding: 16rem 16rem 5.6rem 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .signup .heading-2 {
+    text-align: center; }
+  .signup > * {
+    margin-bottom: 7.2rem; }
+  .signup__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 9.6rem; }
+    .signup__row__col {
+      display: flex;
+      align-items: center;
+      width: 33.3% !important; }
+      .signup__row__col .heading-4 {
+        width: 60%;
+        margin-left: 2.4rem;
+        font-weight: 400; }
+      .signup__row__col:last-of-type {
+        flex-grow: 1; }
+  .signup .btn {
+    height: unset;
+    padding: 2.4rem 3.2rem;
+    text-transform: capitalize;
+    background-color: #3abf7c;
+    margin-top: 3.2rem;
+    width: 20%; }
+
+.cm {
+  display: flex;
+  flex-direction: column;
+  padding: 9.6rem 16rem;
+  background-color: #fafcff;
+  align-items: center; }
+  .cm__row {
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .cm__row__text {
+      border: 2px solid red; }
+      .cm__row__text > * {
+        margin-bottom: 3.2rem; }
+      .cm__row__text .block-paragraph {
+        border-left: 0.5rem solid #3abf7c;
+        padding: 2.4rem;
+        background-color: #f1f6f6; }
+        .cm__row__text .block-paragraph .heading-4 {
+          margin-bottom: 0.8rem; }
+    .cm__row__image {
+      border: 2px solid red; }

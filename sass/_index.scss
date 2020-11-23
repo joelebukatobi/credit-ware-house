@@ -266,8 +266,20 @@
 }
 
 .blog {
-  padding: 12rem 7.2rem;
+  padding: 12rem 7.2rem 25rem 7.2rem;
   width: 100%;
+  position: relative;
+  &__image__1 {
+    position: absolute;
+    z-index: -1;
+    right: 28rem;
+  }
+  &__image__2 {
+    position: absolute;
+    z-index: -1;
+    left: -2rem;
+    bottom: 5rem;
+  }
   &__row {
     display: flex;
     justify-content: space-between;

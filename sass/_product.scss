@@ -1,0 +1,136 @@
+.product-header {
+  padding: 0.8rem 16rem;
+  height: 86vh;
+  overflow-x: hidden;
+
+  &__bg {
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    right: 0;
+    &-2 {
+      position: absolute;
+      z-index: -3;
+      bottom: 0;
+      left: 0;
+      overflow-x: hidden;
+      &__img {
+        width: 98.5vw;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    z-index: -3;
+    top: 2rem;
+    // bottom: 0;
+    right: 0rem;
+  }
+
+  &__content {
+    width: 60rem;
+    margin-top: 11rem;
+    & > * {
+      margin-bottom: 1.6rem;
+    }
+    & .heading-1 {
+      color: $color-secondary;
+    }
+
+    & .btn {
+      background-color: $color-tertiary;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+
+    &__button {
+      margin-top: 3.2rem;
+      & .btn {
+        height: unset;
+        padding: 1.6rem 3.2rem;
+        &:first-of-type {
+          margin-right: 3.2rem;
+        }
+        &:last-of-type {
+          background-color: #c4c4c4;
+        }
+      }
+    }
+  }
+}
+
+.signup {
+  padding: 16rem 16rem 5.6rem 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & .heading-2 {
+    text-align: center;
+  }
+
+  & > * {
+    margin-bottom: 7.2rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 9.6rem;
+    &__col {
+      display: flex;
+      align-items: center;
+      width: 33.3% !important;
+      & .heading-4 {
+        width: 60%;
+        margin-left: 2.4rem;
+        font-weight: 400;
+      }
+      &:last-of-type {
+        flex-grow: 1;
+      }
+    }
+  }
+  & .btn {
+    height: unset;
+    padding: 2.4rem 3.2rem;
+    text-transform: capitalize;
+    background-color: $color-tertiary;
+    margin-top: 3.2rem;
+    width: 20%;
+  }
+}
+
+.cm {
+  display: flex;
+  flex-direction: column;
+  padding: 9.6rem 16rem;
+  background-color: #fafcff;
+  align-items: center;
+  &__row {
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+      border: 2px solid red;
+      & > * {
+        margin-bottom: 3.2rem;
+      }
+      & .block-paragraph {
+        border-left: 0.5rem solid $color-tertiary;
+        padding: 2.4rem;
+        background-color: #f1f6f6;
+
+        & .heading-4 {
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+
+    &__image {
+      border: 2px solid red;
+    }
+  }
+}
