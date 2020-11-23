@@ -1,0 +1,287 @@
+.navbar {
+  background-color: transparent;
+  color: $color-black;
+  margin: 0;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 7.2rem;
+  position: relative;
+
+  &__mobile {
+    // border: 2px solid red;
+    &__menu {
+      display: inline-block;
+    }
+    &__logo {
+      display: inline-block;
+      margin: 0;
+      &__link {
+        &__image {
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    // border: 2px solid red;
+
+    &__list {
+      margin: 0;
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+
+      &__item {
+        list-style: none;
+        // float: left;
+        padding: 0 0 0 4.8rem;
+        & .active {
+          & .btn {
+            background-color: $color-secondary;
+          }
+        }
+
+        &__link {
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: $color-black;
+          text-transform: uppercase;
+          & .btn {
+            &__light {
+              border: 0.1rem solid $color-primary;
+              background-color: $color-primary-light;
+              color: $color-primary;
+            }
+            font-size: 1.2rem;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    display: block;
+    padding: 0;
+    &__mobile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.6rem 2.4rem;
+
+      &__logo {
+        margin: 0;
+        padding: 0;
+      }
+
+      &__menu {
+        &__bar {
+          background-color: $color-primary;
+          width: 3rem;
+          height: 0.2rem;
+          margin: 0.8rem 0;
+          padding: 0;
+
+          &__hide {
+            animation: bar-hide 1s linear forwards;
+          }
+
+          @keyframes bar-hide {
+            0% {
+              width: 0px;
+              height: 0px;
+            }
+
+            100% {
+              width: 0px;
+              height: 0px;
+            }
+          }
+
+          &__cross {
+            animation: bar-cross-left 0.5s linear forwards;
+          }
+
+          @keyframes bar-cross-left {
+            10% {
+              transform: rotate(45deg) translate(4px, 4px);
+            }
+
+            50% {
+              transform: rotate(45deg) translate(7px, 7px);
+            }
+
+            100% {
+              transform: rotate(45deg) translate(3px, 2px);
+            }
+          }
+
+          &__across {
+            animation: bar-cross-right 0.5s linear forwards;
+          }
+
+          @keyframes bar-cross-right {
+            10% {
+              transform: rotate(-45deg);
+            }
+
+            60% {
+              transform: rotate(-45deg) translate(-3px, 3px);
+            }
+
+            100% {
+              transform: rotate(-45deg) translate(1px, -2px);
+            }
+          }
+        }
+      }
+    }
+
+    &__nav {
+      display: none;
+      position: static;
+      &__toggle {
+        display: block;
+      }
+
+      &__list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+
+        &__item {
+          & .active {
+            border-left: 1.5px solid $color-secondary;
+            padding: 0 0 0 0.5rem;
+            border-bottom: 0;
+          }
+          list-style: none;
+          float: none;
+          padding: 2% 5%;
+
+          &__link {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    display: block;
+    padding: 0;
+    &__mobile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.6rem 2.4rem;
+
+      &__logo {
+        margin: 0;
+        padding: 0;
+      }
+
+      &__menu {
+        &__bar {
+          background-color: $color-primary;
+          width: 3rem;
+          height: 0.2rem;
+          margin: 0.8rem 0;
+          padding: 0;
+
+          &__hide {
+            animation: bar-hide 1s linear forwards;
+          }
+
+          @keyframes bar-hide {
+            0% {
+              width: 0px;
+              height: 0px;
+            }
+
+            100% {
+              width: 0px;
+              height: 0px;
+            }
+          }
+
+          &__cross {
+            animation: bar-cross-left 0.5s linear forwards;
+          }
+
+          @keyframes bar-cross-left {
+            10% {
+              transform: rotate(45deg) translate(4px, 4px);
+            }
+
+            50% {
+              transform: rotate(45deg) translate(7px, 7px);
+            }
+
+            100% {
+              transform: rotate(45deg) translate(3px, 2px);
+            }
+          }
+
+          &__across {
+            animation: bar-cross-right 0.5s linear forwards;
+          }
+
+          @keyframes bar-cross-right {
+            10% {
+              transform: rotate(-45deg);
+            }
+
+            60% {
+              transform: rotate(-45deg) translate(-3px, 3px);
+            }
+
+            100% {
+              transform: rotate(-45deg) translate(1px, -2px);
+            }
+          }
+        }
+      }
+    }
+
+    &__nav {
+      display: none;
+      position: static;
+      &__toggle {
+        display: block;
+      }
+
+      &__list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+
+        &__item {
+          & .active {
+            border-left: 1.5px solid $color-secondary;
+            padding: 0 0 0 0.5rem;
+            border-bottom: 0;
+          }
+          list-style: none;
+          float: none;
+          padding: 2% 5%;
+
+          &__link {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
