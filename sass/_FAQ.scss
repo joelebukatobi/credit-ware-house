@@ -1,0 +1,120 @@
+.faq {
+  padding: 0.8rem 7.2rem;
+  height: 55vh;
+
+  &__image-1 {
+    position: absolute;
+    z-index: -3;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__image-2 {
+    position: absolute;
+    z-index: -2;
+    left: 025rem;
+  }
+
+  &__image-3 {
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: -3;
+    height: 48rem;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: #d5e7fb7e;
+    &-2 {
+      position: absolute;
+      z-index: -3;
+      top: 5rem;
+      right: 7.2rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    overflow: hidden;
+    z-index: -3;
+    top: 0;
+    right: 3rem;
+    & img {
+      height: 48rem;
+    }
+  }
+
+  &__content {
+    width: 60rem;
+    margin-top: 5rem;
+    & > * {
+      margin-bottom: 1.6rem;
+    }
+    & .heading-1 {
+      color: $color-secondary;
+    }
+
+    & .btn {
+      background-color: $color-tertiary;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.categories {
+  padding: 7.2rem 7.2rem;
+  background: #fafafa;
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__section {
+      height: 4.8rem;
+      width: 45%;
+      padding: 0 0.8rem;
+      background: #eeeeee;
+      outline: none;
+      border: none;
+      font-family: $font-primary;
+    }
+    &__input {
+      height: 4.8rem;
+      width: 45%;
+      padding: 0 1.6rem;
+      background: #eeeeee;
+      outline: none;
+      border: none;
+      font-family: $font-primary;
+    }
+  }
+}
+
+.faq-card {
+  &__row {
+    padding: 7.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.8rem;
+    &__card {
+      width: 20%;
+      cursor: pointer;
+      & .heading-5 {
+        font-weight: 300;
+        font-family: $font-secondary;
+      }
+
+      & > * {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+}
+
+.grey-bg {
+  background-color: #fafafa;
+}

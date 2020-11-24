@@ -2,6 +2,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
  <link rel="stylesheet" href="css/style.css">
  <title>Creditware House</title>
 </head>
@@ -36,9 +37,7 @@
      <nav class="navbar__nav">
        <ul class="navbar__nav__list">
          <li class="navbar__nav__list__item">
-           <a class="navbar__nav__list__item__link active" href="#"
-             >Products</a
-           >
+           <a class="navbar__nav__list__item__link" href="product.html">Products</a>
          </li>
          <li class="navbar__nav__list__item">
            <a class="navbar__nav__list__item__link" href="#"
@@ -46,7 +45,7 @@
            >
          </li>
          <li class="navbar__nav__list__item">
-           <a class="navbar__nav__list__item__link" href="#">
+           <a class="navbar__nav__list__item__link" href="FAQ.html">
              Faqs
            </a>
          </li>
@@ -74,7 +73,9 @@
      <div class="header__bg-2">
        <img class="header__bg-2__img" src="images/header-bg-2.svg" alt="">
      </div>
-     <div class="header__img"><img class="header__img__pic" src="images/header-image.png" alt=""></div>
+     <div class="header__img">
+       <img class="header__img__pic" src="images/header-image.png" alt="">
+      </div>
 
      <div class="header__content">
        <h1 class="heading-1">
@@ -96,9 +97,48 @@
         We’ve built trust with over 10+ brands across sub-saharan africa
        </h5>
      </div>
-     <div class="brands__carousel">
-
-     </div>
+     <div class="swiper-container brands__carousel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/settlemnt-logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/settlemnt-logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/credit-registry.logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/steriosh-logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/cico-logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/cico-logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/settlemnt-logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/settlemnt-logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/credit-registry.logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/steriosh-logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/cico-logo.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/cico-logo.png" alt="">
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
    </div>
 
 
@@ -189,8 +229,65 @@
 
   <!-- Testimonies  -->
   <div class="testimonies">
-    <h2 class="heading-1">Testimonies</h2>
-    <p class="paragraph">Here's what our clients are saying</p>
+    <div class="testimonies__caption">
+      <h2 class="heading-1">Testimonies</h2>
+      <p class="paragraph">Here's what our clients are saying</p>
+    </div>
+    <div class="testimonies__row">
+      <div class="swiper-container testimonies__carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="slide-image" src="images/testimony-image.png" alt="">
+            <div class="slide-text">
+              <img class="quote" src="images/quote.svg" alt="">
+              <h4 class="heading-4"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+              </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="slide-image" src="images/testimony-image.png" alt="">
+            <div class="slide-text">
+              <img class="quote" src="images/quote.svg" alt="">
+              <h4 class="heading-4"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+              </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="slide-image" src="images/testimony-image.png" alt="">
+            <div class="slide-text">
+              <img class="quote" src="images/quote.svg" alt="">
+              <h4 class="heading-4"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+              </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="slide-image" src="images/testimony-image.png" alt="">
+            <div class="slide-text">
+              <img class="quote" src="images/quote.svg" alt="">
+              <h4 class="heading-4"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+              </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="slide-image" src="images/testimony-image.png" alt="">
+            <div class="slide-text">
+              <img class="quote" src="images/quote.svg" alt="">
+              <h4 class="heading-4"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+    <img class="testimonies__row__decor-1" src="images/circles.svg" alt="">
+    <img class="testimonies__row__decor-2" src="images/dot-pattern.svg" alt="">
+    </div>
   </div>
 
   <!-- Aims -->
@@ -394,5 +491,6 @@
   </footer>
 
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/index.js"></script>
 </html>
