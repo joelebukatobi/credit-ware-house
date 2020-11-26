@@ -13,6 +13,7 @@
     "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
+  "homepage": "https:/joelebukatobi.github.io/credit-ware-house",
   "author": "",
   "license": "ISC",
   "devDependencies": {
