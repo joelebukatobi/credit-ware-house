@@ -1,16 +1,17 @@
 .navbar {
   background-color: transparent;
   color: $color-black;
-  margin: 0;
+  margin: 0 auto;
   max-width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 7.2rem;
+  padding: 0.8rem 16rem;
   height: 10rem;
   position: relative;
+  z-index: 2;
 
   &__mobile {
     // border: 2px solid red;
@@ -161,17 +162,22 @@
         padding: 0;
 
         &__item {
-          & .active {
-            border-left: 1.5px solid $color-secondary;
-            padding: 0 0 0 0.5rem;
-            border-bottom: 0;
-          }
           list-style: none;
           float: none;
           padding: 2% 5%;
 
           &__link {
             font-size: 1.8rem;
+            & .btn,
+            .btn-light {
+              padding: 0;
+              background-color: transparent;
+              color: $color-black;
+              font-size: 1.8rem;
+              font-weight: 500;
+              font-family: $font-primary;
+              border: none;
+            }
           }
         }
       }
@@ -278,11 +284,85 @@
           list-style: none;
           float: none;
           padding: 2% 5%;
-
           &__link {
             font-size: 1.8rem;
           }
         }
+      }
+    }
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 0.8rem 10rem;
+  }
+}
+
+.footer {
+  padding: 16rem;
+  background-color: $color-secondary;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7.2rem;
+    &__col {
+      width: 20%;
+      & .heading-4 {
+        color: $color-white;
+        font-weight: 500;
+        margin-bottom: 1.6rem;
+      }
+
+      & .paragraph {
+        color: $color-white;
+        font-weight: 300;
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+  & .separator {
+    height: 0.1rem;
+    border: none;
+    background-color: $color-white;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 3.2rem;
+    &__logo {
+      width: 20%;
+    }
+    &__col {
+      & .paragraph {
+        color: $color-white;
+        font-weight: 300;
+      }
+    }
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 10rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 2.4rem;
+
+    &__row {
+      flex-direction: column;
+      &__col {
+        width: 100%;
+        margin-bottom: 3.2rem;
+      }
+    }
+
+    &__bottom {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      & > * {
+        margin-bottom: 2.4rem;
+      }
+      &__logo {
+        width: 100%;
       }
     }
   }

@@ -1,73 +1,73 @@
 .faq {
-  padding: 0.8rem 7.2rem;
+  padding: 0.8rem 16rem;
   height: 55vh;
-
-  &__image-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  top: -10rem;
+  background: rgba(213, 231, 251, 0.5);
+  & img {
     position: absolute;
-    z-index: -3;
+  }
+  &__img {
+    right: 0;
+    bottom: 0;
+    height: 100%;
+  }
+  &__bg-img {
+    right: 0;
+    z-index: -2;
+  }
+
+  // &__content {
+  // }
+  &__decor-1 {
+    z-index: -2;
     left: 0;
     bottom: 0;
   }
-
-  &__image-2 {
-    position: absolute;
-    z-index: -2;
-    left: 025rem;
+  &__decor-2 {
+    z-index: -1;
+    top: 0;
+    left: 32rem;
   }
-
-  &__image-3 {
-    position: absolute;
-    z-index: -2;
+  &__decor-3 {
+    z-index: -1;
     bottom: 0;
+    left: 0;
   }
-
-  &__bg {
-    position: absolute;
-    z-index: -3;
-    height: 48rem;
-    width: 100%;
-    top: 0;
-    right: 0;
-    background-color: #d5e7fb7e;
-    &-2 {
-      position: absolute;
-      z-index: -3;
-      top: 5rem;
-      right: 7.2rem;
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 0.8rem 10rem;
+    &__img {
+      width: 60%;
+      right: -5rem;
     }
   }
-
-  &__img {
-    position: absolute;
-    overflow: hidden;
-    z-index: -3;
-    top: 0;
-    right: 3rem;
-    & img {
-      height: 48rem;
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 0 2.4rem;
+    &__decor-1 {
+      display: none;
     }
-  }
-
-  &__content {
-    width: 60rem;
-    margin-top: 5rem;
-    & > * {
-      margin-bottom: 1.6rem;
+    &__decor-2 {
+      display: none;
     }
-    & .heading-1 {
-      color: $color-secondary;
+    &__decor-3 {
+      display: none;
     }
-
-    & .btn {
-      background-color: $color-tertiary;
-      font-weight: 400;
-      text-transform: capitalize;
+    &__img {
+      display: none;
+    }
+    &__bg-img {
+      bottom: 0;
+      z-index: -1;
     }
   }
 }
 
 .categories {
-  padding: 7.2rem 7.2rem;
+  margin-top: -10rem;
+  padding: 7.2rem 16em;
   background: #fafafa;
   &__form {
     display: flex;
@@ -92,16 +92,34 @@
       font-family: $font-primary;
     }
   }
+
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 7.2rem 10rem;
+  }
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 5.6rem 2.4rem;
+    &__form {
+      &__section {
+        width: 48%;
+      }
+      &__input {
+        width: 48%;
+      }
+    }
+  }
 }
 
 .faq-card {
   &__row {
-    padding: 7.2rem;
+    padding: 7.2rem 16rem;
     display: flex;
     justify-content: space-between;
     margin-top: 4.8rem;
     &__card {
       width: 20%;
+      & img {
+        width: 100%;
+      }
       cursor: pointer;
       & .heading-5 {
         font-weight: 300;
@@ -110,6 +128,19 @@
 
       & > * {
         margin-bottom: 0.8rem;
+      }
+    }
+
+    @media all and (min-width: 1024px) and (max-width: 1440px) {
+      padding: 7.2rem 10rem;
+    }
+    @media (min-width: 320px) and (max-width: 576px) {
+      padding: 7.2rem 2.4rem;
+      flex-direction: column;
+      margin-top: 3.2rem;
+      &__card {
+        width: 100%;
+        margin-bottom: 3.2rem;
       }
     }
   }

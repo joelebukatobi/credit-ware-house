@@ -1,28 +1,38 @@
 .product-header {
   padding: 0.8rem 16rem;
-  height: 86vh;
-
-  &__bg {
+  height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  top: -10rem;
+  display: flex;
+  align-items: center;
+  &__bg-img {
+    width: 100%;
     position: absolute;
-    z-index: -3;
     top: 0;
-    right: 0;
+    left: 0;
+    z-index: -2;
+    &:last-of-type {
+      top: unset;
+      bottom: 0;
+    }
   }
+
   &__img {
     position: absolute;
-    overflow: hidden;
-    z-index: -3;
-    top: 2rem;
-    // bottom: 0;
-    right: 0rem;
+    top: 0;
+    right: 0;
+    // padding-right: 7.2rem;
+    width: 72rem;
   }
-
   &__content {
-    width: 60rem;
-    margin-top: 11rem;
+    z-index: 5;
+    width: 72rem;
+    // height: 50%;
     & > * {
       margin-bottom: 1.6rem;
     }
+
     & .heading-1 {
       color: $color-secondary;
     }
@@ -32,25 +42,34 @@
       font-weight: 400;
       text-transform: capitalize;
     }
+  }
 
-    &__button {
-      margin-top: 3.2rem;
-      & .btn {
-        height: unset;
-        padding: 1.6rem 3.2rem;
-        &:first-of-type {
-          margin-right: 3.2rem;
-        }
-        &:last-of-type {
-          background-color: #c4c4c4;
-        }
-      }
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 0.8rem 10rem;
+    &__img {
+      width: 56rem;
+      // top: ;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 0.8rem 2.4rem;
+
+    padding: 0 2.4rem;
+    overflow-x: hidden;
+    &__img {
+      right: 0rem;
+      display: none;
+    }
+    &__bg-img {
+      height: 100rem;
+      width: 100rem;
     }
   }
 }
 
 .signup {
-  padding: 16rem 16rem 5.6rem 16rem;
+  padding: 0rem 16rem 5.6rem 16rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,6 +108,29 @@
     margin-top: 3.2rem;
     width: 20%;
   }
+
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 0rem 10rem 5.6rem 10rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 0 2.4rem 2.4rem 2.4rem;
+    &__row {
+      flex-direction: column;
+      margin-bottom: 0;
+      &__col {
+        width: 100% !important;
+        margin-bottom: 3.2rem;
+        & .heading-4 {
+          width: 100%;
+        }
+      }
+    }
+    & .btn {
+      width: 100%;
+      font-weight: 400;
+    }
+  }
 }
 
 .bg {
@@ -125,8 +167,29 @@
     }
 
     &__image {
+      width: 40%;
+      height: 100%;
       & img {
+        width: 100%;
+        // height: 100%;
         box-shadow: 20px 40px 72px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 9.6rem 10rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 7.2rem 2.4rem;
+    &__row {
+      flex-direction: column-reverse;
+      &__text {
+        width: 100%;
+      }
+      &__image {
+        width: 100%;
+        margin-bottom: 3.2rem;
       }
     }
   }
@@ -165,8 +228,29 @@
     }
 
     &__image {
+      width: 40%;
+      height: 100%;
       & img {
+        width: 100%;
+        // height: 100%;
         box-shadow: 20px 40px 72px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 9.6rem 10rem;
+  }
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 7.2rem 2.4rem;
+    &__row {
+      flex-direction: column;
+      &__text {
+        width: 100%;
+      }
+      &__image {
+        width: 100%;
+        margin-bottom: 3.2rem;
       }
     }
   }
@@ -234,6 +318,12 @@
       text-transform: unset;
     }
   }
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 2.4rem;
+    &__content {
+      width: 100%;
+    }
+  }
 }
 
 .cs-modal {
@@ -282,6 +372,12 @@
       background-color: $color-tertiary;
       width: 100%;
       text-transform: unset;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 2.4rem;
+    &__content {
+      width: 100%;
     }
   }
 }
@@ -334,6 +430,12 @@
       text-transform: unset;
     }
   }
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 2.4rem;
+    &__content {
+      width: 100%;
+    }
+  }
 }
 
 .av-modal {
@@ -382,6 +484,12 @@
       background-color: $color-tertiary;
       width: 100%;
       text-transform: unset;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 2.4rem;
+    &__content {
+      width: 100%;
     }
   }
 }

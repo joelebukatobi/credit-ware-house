@@ -1,0 +1,123 @@
+<svg width="148" height="152" viewBox="0 0 148 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="14" cy="2" r="2" fill="white"/>
+<circle cx="14" cy="18" r="2" fill="white"/>
+<circle cx="14" cy="34" r="2" fill="white"/>
+<circle cx="14" cy="50" r="2" fill="white"/>
+<circle cx="14" cy="66" r="2" fill="white"/>
+<circle cx="14" cy="82" r="2" fill="white"/>
+<circle cx="14" cy="98" r="2" fill="white"/>
+<circle cx="14" cy="114" r="2" fill="white"/>
+<circle cx="14" cy="130" r="2" fill="white"/>
+<circle cx="14" cy="146" r="2" fill="white"/>
+<circle cx="30" cy="2" r="2" fill="white"/>
+<circle cx="30" cy="18" r="2" fill="white"/>
+<circle cx="30" cy="34" r="2" fill="white"/>
+<circle cx="30" cy="50" r="2" fill="white"/>
+<circle cx="30" cy="66" r="2" fill="white"/>
+<circle cx="30" cy="82" r="2" fill="white"/>
+<circle cx="30" cy="98" r="2" fill="white"/>
+<circle cx="30" cy="114" r="2" fill="white"/>
+<circle cx="30" cy="130" r="2" fill="white"/>
+<circle cx="30" cy="146" r="2" fill="white"/>
+<circle cx="46" cy="2" r="2" fill="white"/>
+<circle cx="46" cy="18" r="2" fill="white"/>
+<circle cx="46" cy="34" r="2" fill="white"/>
+<circle cx="46" cy="50" r="2" fill="white"/>
+<circle cx="46" cy="66" r="2" fill="white"/>
+<circle cx="46" cy="82" r="2" fill="white"/>
+<circle cx="46" cy="98" r="2" fill="white"/>
+<circle cx="46" cy="114" r="2" fill="white"/>
+<circle cx="46" cy="130" r="2" fill="white"/>
+<circle cx="46" cy="146" r="2" fill="white"/>
+<circle cx="62" cy="2" r="2" fill="white"/>
+<circle cx="62" cy="18" r="2" fill="white"/>
+<circle cx="62" cy="34" r="2" fill="white"/>
+<circle cx="62" cy="50" r="2" fill="white"/>
+<circle cx="62" cy="66" r="2" fill="white"/>
+<circle cx="62" cy="82" r="2" fill="white"/>
+<circle cx="62" cy="98" r="2" fill="white"/>
+<circle cx="62" cy="114" r="2" fill="white"/>
+<circle cx="62" cy="130" r="2" fill="white"/>
+<circle cx="62" cy="146" r="2" fill="white"/>
+<circle cx="78" cy="2" r="2" fill="white"/>
+<circle cx="78" cy="18" r="2" fill="white"/>
+<circle cx="78" cy="34" r="2" fill="white"/>
+<circle cx="78" cy="50" r="2" fill="white"/>
+<circle cx="78" cy="66" r="2" fill="white"/>
+<circle cx="78" cy="82" r="2" fill="white"/>
+<circle cx="78" cy="98" r="2" fill="white"/>
+<circle cx="78" cy="114" r="2" fill="white"/>
+<circle cx="78" cy="130" r="2" fill="white"/>
+<circle cx="78" cy="146" r="2" fill="white"/>
+<circle cx="94" cy="2" r="2" fill="white"/>
+<circle cx="94" cy="18" r="2" fill="white"/>
+<circle cx="94" cy="34" r="2" fill="white"/>
+<circle cx="94" cy="50" r="2" fill="white"/>
+<circle cx="94" cy="66" r="2" fill="white"/>
+<circle cx="94" cy="82" r="2" fill="white"/>
+<circle cx="94" cy="98" r="2" fill="white"/>
+<circle cx="94" cy="114" r="2" fill="white"/>
+<circle cx="94" cy="130" r="2" fill="white"/>
+<circle cx="94" cy="146" r="2" fill="white"/>
+<circle cx="110" cy="2" r="2" fill="white"/>
+<circle cx="110" cy="18" r="2" fill="white"/>
+<circle cx="110" cy="34" r="2" fill="white"/>
+<circle cx="110" cy="50" r="2" fill="white"/>
+<circle cx="110" cy="66" r="2" fill="white"/>
+<circle cx="110" cy="82" r="2" fill="white"/>
+<circle cx="110" cy="98" r="2" fill="white"/>
+<circle cx="110" cy="114" r="2" fill="white"/>
+<circle cx="110" cy="130" r="2" fill="white"/>
+<circle cx="110" cy="146" r="2" fill="white"/>
+<circle cx="126" cy="2" r="2" fill="white"/>
+<circle cx="126" cy="18" r="2" fill="white"/>
+<circle cx="126" cy="34" r="2" fill="white"/>
+<circle cx="126" cy="50" r="2" fill="white"/>
+<circle cx="126" cy="66" r="2" fill="white"/>
+<circle cx="126" cy="82" r="2" fill="white"/>
+<circle cx="126" cy="98" r="2" fill="white"/>
+<circle cx="126" cy="114" r="2" fill="white"/>
+<circle cx="126" cy="130" r="2" fill="white"/>
+<circle cx="126" cy="146" r="2" fill="white"/>
+<circle cx="142" cy="2" r="2" fill="white"/>
+<circle cx="142" cy="18" r="2" fill="white"/>
+<circle cx="142" cy="34" r="2" fill="white"/>
+<circle cx="142" cy="50" r="2" fill="white"/>
+<circle cx="142" cy="66" r="2" fill="white"/>
+<circle cx="142" cy="82" r="2" fill="white"/>
+<circle cx="142" cy="98" r="2" fill="white"/>
+<circle cx="142" cy="114" r="2" fill="white"/>
+<circle cx="142" cy="130" r="2" fill="white"/>
+<circle cx="142" cy="146" r="2" fill="white"/>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+</svg>
