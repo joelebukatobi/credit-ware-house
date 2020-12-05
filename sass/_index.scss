@@ -1,6 +1,6 @@
 .header {
   padding: 0.8rem 16rem;
-  height: 100vh;
+  height: 80vh;
   overflow-y: hidden;
   position: relative;
   top: -10rem;
@@ -15,7 +15,7 @@
     &:nth-of-type(2) {
       top: unset;
       bottom: 0;
-      padding-left: 13rem;
+      padding-left: 14rem;
     }
   }
 
@@ -27,20 +27,28 @@
     width: 96rem;
   }
   &__content {
+    margin-top: -5rem;
     z-index: 5;
     width: 72rem;
-    // height: 50%;
-    & > * {
-      margin-bottom: 1.6rem;
-    }
     & .heading-1 {
       color: $color-secondary;
+      margin-bottom: 0.8rem;
+      font-size: 4.6rem;
+    }
+
+    & .paragraph {
+      font-size: 1.6rem;
+      width: 90%;
     }
 
     & .btn {
+      margin-top: 5.6rem;
       background-color: $color-tertiary;
       font-weight: 400;
-      text-transform: capitalize;
+      padding: 1.75rem 4.8rem;
+      font-weight: 200;
+      height: unset;
+      text-transform: none;
     }
   }
 
@@ -61,6 +69,7 @@
   @media (min-width: 320px) and (max-width: 576px) {
     padding: 0 2.4rem;
     overflow-x: hidden;
+    height: 100vh;
     &__img {
       right: 0rem;
       display: none;
@@ -73,17 +82,24 @@
         display: none;
       }
     }
+    &__content {
+      margin-top: 5rem;
+      & .btn {
+        font-weight: 400;
+      }
+    }
   }
 }
 
 .brands {
+  margin-top: -10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6.4rem 16rem;
+  padding: 4.8rem 16rem;
   width: 100%;
   &__caption {
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.4rem;
     & .heading-5 {
       font-weight: 400;
     }
@@ -103,12 +119,14 @@
   }
   @media (min-width: 320px) and (max-width: 576px) {
     padding: 2.4rem;
-    margin-top: -10rem;
+    & .swiper-container {
+      padding-bottom: 4.8rem;
+    }
   }
 }
 
 .banner {
-  padding: 12rem 16rem;
+  padding: 10rem 16rem;
   display: flex;
   justify-content: space-between;
   background-color: $color-grey;
@@ -124,6 +142,7 @@
     }
 
     & .paragraph {
+      font-size: 2rem;
       & a {
         color: $color-primary;
       }
@@ -132,6 +151,8 @@
 
   &__two {
     width: 35%;
+    position: relative;
+    z-index: 1;
     & .heading-4 {
       font-weight: 400;
     }
@@ -143,25 +164,25 @@
     right: 5rem;
     transform: scaleY(-1);
     opacity: 0.7;
-    z-index: -1;
+    // z-index: -1;
   }
   &__img-2 {
     position: absolute;
     top: 35rem;
     right: 25rem;
     opacity: 0.7;
-    z-index: -1;
+    // z-index: -1;
   }
   &__img-3 {
     position: absolute;
     top: 0rem;
     right: 20rem;
     opacity: 0.7;
-    z-index: -1;
+    // z-index: -1;
   }
 
   @media all and (min-width: 1024px) and (max-width: 1440px) {
-    padding: 12rem 10rem;
+    padding: 10rem 10rem;
   }
   @media (min-width: 320px) and (max-width: 576px) {
     padding: 7.2rem 4rem;
@@ -172,12 +193,21 @@
     &__two {
       width: 100%;
     }
+    &__img-1 {
+      display: none;
+    }
+    &__img-2 {
+      display: none;
+    }
+    &__img-3 {
+      display: none;
+    }
   }
 }
 
 .services {
   position: relative;
-  padding: 12rem 16rem;
+  padding: 10rem 16rem;
   width: 100%;
   &__image__1 {
     position: absolute;
@@ -196,9 +226,11 @@
     margin-bottom: 4.8rem;
     color: #333333;
     text-align: center;
+    font-size: 6.4rem;
   }
 
   & .paragraph {
+    font-size: 2rem;
     & a {
       color: $color-primary;
     }
@@ -212,7 +244,7 @@
     margin-bottom: 6.4rem;
     justify-content: space-between;
     &__card {
-      width: 22%;
+      width: 23%;
       margin: 0 auto;
       margin: 0;
       padding: 0;
@@ -233,7 +265,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 3.2rem 4.8rem;
+        padding: 3.2rem 2rem;
         height: 100%;
         width: 100%;
         text-align: center;
@@ -247,7 +279,7 @@
           justify-content: center;
         }
 
-        & .paragraph {
+        & .heading-3 & .paragraph {
           color: #2f3d50;
         }
         & > * {
@@ -267,7 +299,7 @@
   }
 
   @media all and (min-width: 1024px) and (max-width: 1440px) {
-    padding: 12rem 10rem;
+    padding: 10rem 10rem;
     &__cards {
       &__card {
         width: 22%;
@@ -287,7 +319,7 @@
   }
 
   @media (min-width: 320px) and (max-width: 576px) {
-    padding: 7.2rem 2.4rem;
+    padding: 4.8rem;
     &__image__1 {
       display: none;
     }
@@ -301,6 +333,7 @@
       &__card {
         width: 100%;
         margin-bottom: 4.8rem;
+        cursor: unset;
         -webkit-transform: unset;
         transform: unset;
         -webkit-transition: unset;
@@ -310,12 +343,13 @@
           transform: unset;
         }
         &__container {
-          padding: 8.8rem 7.2rem;
+          padding: 8.8rem 1.6rem;
+          margin-bottom: 3.2rem;
           & > * {
             margin-bottom: 2.4rem;
           }
           & .paragraph {
-            width: 60%;
+            width: 80%;
           }
           &__icon {
             height: 16rem;
@@ -328,14 +362,18 @@
 }
 
 .testimonies {
-  padding: 12rem 0 20rem 0;
+  padding: 7.2rem 0 20rem 0;
   &__caption {
     padding: 0 16rem;
+    & .heading-1 {
+      color: #333333;
+      font-size: 6.4rem;
+    }
   }
   background-color: $color-grey;
   &__row {
     position: relative;
-    margin-top: 6.4rem;
+    margin-top: 10rem;
     height: 56rem;
     padding-left: 16rem;
     &::after {
@@ -368,12 +406,12 @@
               display: flex;
               flex-direction: column;
               & .swiper-pagination-bullet {
-                width: 2.4rem;
-                height: 2.4rem;
+                width: 2rem;
+                height: 2rem;
                 background: transparent;
                 border: 0.2rem solid $color-white;
                 opacity: 1;
-                margin-bottom: 1.6rem;
+                margin-bottom: 2.4rem;
               }
 
               & .swiper-pagination-bullet-active {
@@ -405,7 +443,7 @@
     &__decor-2 {
       position: absolute;
       bottom: -8rem;
-      left: 4.8rem;
+      left: 8rem;
       z-index: 3;
     }
   }
@@ -468,24 +506,27 @@
 
     &__row {
       padding-left: 0rem;
-      height: auto;
       margin-top: 2.4rem;
       padding-bottom: 0;
+      height: unset;
       &::after {
         clip-path: unset;
       }
       & .swiper-container {
+        height: 100% !important;
         & .swiper-wrapper {
+          height: 100% !important;
           & .swiper-slide {
             flex-direction: column;
             justify-content: unset;
+            height: 100% !important;
             .slide-image {
               height: unset;
               width: 100%;
             }
             & .slide-text {
               padding: 2.4rem;
-              height: 100%;
+              // height: 100%;
               & .swiper-pagination {
                 flex-direction: row;
                 bottom: 7.2rem;
@@ -525,14 +566,14 @@
     z-index: -1;
     right: 5rem;
     top: 18rem;
-    animation: rotation 4s infinite linear;
+    animation: rotation 5s infinite linear;
   }
   &__img-3 {
     position: absolute;
     z-index: -1;
     right: 15rem;
     top: 40rem;
-    animation: rotation 6s infinite linear;
+    animation: rotation 5s infinite linear;
   }
 
   @keyframes rotation {
@@ -555,7 +596,10 @@
       display: flex;
       align-items: center;
     }
-
+    & .heading-1 {
+      color: #333333;
+      font-size: 6.4rem;
+    }
     &__icon {
       margin-right: 1.6rem;
     }
@@ -583,7 +627,6 @@
 
 .team {
   position: relative;
-  // border: 2px solid red;
   padding: 9rem 16rem 4rem 16rem;
   width: 100%;
   height: 95rem;
@@ -605,11 +648,12 @@
     top: 0;
     padding-bottom: 10rem;
     z-index: -1;
-    // border: 2px solid red;
   }
   & .heading-1 {
     text-align: center;
-    margin-bottom: 7.2rem;
+    margin-bottom: 6.4rem;
+    font-size: 6.4rem;
+    color: #333333;
   }
 
   &__row {
@@ -622,6 +666,24 @@
       flex-direction: column;
       align-items: center;
       width: 25%;
+      cursor: pointer;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        & .heading-4 {
+          display: none;
+        }
+        & .paragraph {
+          display: none;
+        }
+        & .card-link {
+          display: none;
+        }
+      }
       &__image {
         border-radius: 2.4rem;
         & img {
@@ -649,15 +711,33 @@
       align-items: center;
       &__card {
         width: 100%;
+        cursor: unset;
+        -webkit-transform: unset;
+        transform: unset;
+        -webkit-transition: unset;
+        transition: unset;
         margin-bottom: 4.8rem;
+        &:hover {
+          -webkit-transform: unset;
+          transform: unset;
+          & .heading-4 {
+            display: unset;
+          }
+          & .paragraph {
+            display: unset;
+          }
+          & .card-link {
+            display: unset;
+          }
+        }
         & > * {
           margin-bottom: 1.6rem;
         }
-        &__image {
-          & img {
-            height: 25rem;
-            width: 25rem;
-          }
+      }
+      &__image {
+        & img {
+          height: 25rem;
+          width: 25rem;
         }
       }
     }
@@ -668,6 +748,10 @@
   padding: 12rem 16rem 25rem 16rem;
   width: 100%;
   position: relative;
+  & .heading-1 {
+    color: #333333;
+    font-size: 6.4rem;
+  }
   &__image__1 {
     position: absolute;
     z-index: -1;
@@ -746,6 +830,14 @@
       &__post {
         width: 100%;
         margin-bottom: 7.2rem;
+        box-shadow: 0px 1px 5px 2px rgba(139, 139, 139, 0.25);
+        & .heading-4,
+        & .paragraph {
+          padding-left: 2.4rem;
+        }
+        & .separator {
+          display: none;
+        }
         &:hover {
           & .paragraph {
             color: $color-black;

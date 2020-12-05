@@ -86,20 +86,21 @@
    <!-- Categories -->
    <div class="categories">
     <form class="categories__form">
-      <select class="categories__form__section" id="cars" name="cars">
-        <option value="volvo">How To?</option>
-        <option value="saab">Contract Manager</option>
-        <option value="mercedes">Market Place</option>
-        <option value="audi">Connector Service</option>
+      <select class="categories__form__select" id="cars" name="cars">
+        <option value="">CATEGORIES</option>
+        <option value="">Contract Manager</option>
+        <option value="">Market Place</option>
+        <option value="">Connector Service</option>
+        <option value="">Agent Verification</option>
       </select>
-      <input class="categories__form__input" type="text" placeholder="Search">
+      <input class="categories__form__input" type="text" placeholder="KEY WORD SEARCH">
     </form>
    </div>
 
    <!-- FAQs -->
    <div class="faq-card">
     <div class="faq-card__row">
-     <div class="faq-card__row__card">
+     <div class="faq-card__row__card" id="faq-card">
       <img src="images/faq-card.png" alt="">
       <h5 class="heading-5">Category:</h5>
       <h5 class="heading-5">Key Words:</h5>
@@ -166,16 +167,49 @@
     </div>
    </div>
 
+   <div class="faq-modal-container" id="faq-modal">
+    <div class="swiper-container faq-modal-swiper" >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/faq-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/faq-2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/faq-3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/faq-4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/faq-5.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/faq-6.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/faq-7.jpg" alt="">
+        </div>
+      </div>
+      <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next" id="next"></div>
+          <div class="swiper-button-prev" id="prev"></div>
+    </div>
+  </div>
+
    
    
    <!-- Brands -->
-   <div class="brands">
-    <div class="brands__caption">
+   <div class="faq-brands">
+    <div class="faq-brands__caption">
       <h5 class="heading-5">
        We’ve built trust with over 10+ brands across sub-saharan africa
       </h5>
     </div>
-    <div class="swiper-container brands__carousel">
+    <div class="swiper-container faq-brands__carousel">
      <div class="swiper-wrapper">
        <div class="swiper-slide">
          <img src="images/settlemnt-logo.png" alt="">
@@ -220,6 +254,7 @@
   </div>
 
 
+ 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__row">
@@ -237,9 +272,12 @@
         <a href="">
           <p class="paragraph">Connector service</p>
         </a>
+        <a href="">
+          <p class="paragraph">Agent Verification</p>
+        </a>
       </div>
       <div class="footer__row__col">
-        <h5 class="heading-4">Product</h5>
+        <h5 class="heading-4">Legal</h5>
       <a href="">
         <p class="paragraph">Terms and Conditions</p>
       </a>
@@ -259,7 +297,7 @@
       <div class="footer__row__col">
         <h5 class="heading-4">Contact</h5>
       <a href="">
-        <p class="paragraph">Hello@creditwarehouse.com</p>
+        <p class="paragraph">Hello@creditwarehouse.io</p>
       </a>
       <p class="paragraph">+234 909 234 4567</p>
       <p class="paragraph">+234 909 456 7890</p>
@@ -270,11 +308,6 @@
       <div class="footer__bottom__logo">
         <img src="images/logo-white.png" alt="">
       </div>
-      <div class="footer__bottom__col">
-        <p class="paragraph">
-          Agent verification
-        </p>
-      </div>
       <div class="footer__bottom__sm">
 
       </div>
@@ -283,5 +316,6 @@
 
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="js/index.js"></script>
+<!-- <script src="js/index.js"></script> -->
+<script src="js/faq.js"></script>
 </html>

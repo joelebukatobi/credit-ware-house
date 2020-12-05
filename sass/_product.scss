@@ -22,39 +22,48 @@
     position: absolute;
     top: 0;
     right: 0;
-    // padding-right: 7.2rem;
-    width: 72rem;
+    width: 50%;
   }
+
   &__content {
     z-index: 5;
     width: 72rem;
     // height: 50%;
     & > * {
-      margin-bottom: 1.6rem;
+      margin-bottom: 4.8rem;
     }
 
     & .heading-1 {
       color: $color-secondary;
+      width: 83%;
     }
 
-    & .btn {
-      background-color: $color-tertiary;
-      font-weight: 400;
-      text-transform: capitalize;
+    &__button {
+      & .btn {
+        background-color: $color-tertiary;
+        font-weight: 400;
+        text-transform: capitalize;
+        height: unset;
+        padding: 1.6rem 4.8rem;
+        &:nth-of-type(2) {
+          background-color: #c4c4c4;
+          margin-left: 6.4rem;
+        }
+      }
     }
   }
 
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     padding: 0.8rem 10rem;
     &__img {
-      width: 56rem;
+      width: 50%;
       // top: ;
     }
   }
 
   @media (min-width: 320px) and (max-width: 576px) {
     padding: 0.8rem 2.4rem;
-
+    height: 100vh;
     padding: 0 2.4rem;
     overflow-x: hidden;
     &__img {
@@ -64,6 +73,32 @@
     &__bg-img {
       height: 100rem;
       width: 100rem;
+    }
+    &__content {
+      margin-top: 10rem;
+      &__button {
+        display: flex;
+        flex-direction: column;
+        & .btn {
+          width: 100%;
+          &:nth-of-type(2) {
+            margin-top: 3.2rem;
+            margin-left: unset;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 375px) {
+    &__content {
+      & > * {
+        margin-bottom: 1.6rem;
+      }
+      & .btn {
+        &:nth-of-type(2) {
+          margin-top: 1.6rem;
+        }
+      }
     }
   }
 }
@@ -75,10 +110,12 @@
   align-items: center;
   & .heading-2 {
     text-align: center;
+    color: $color-secondary;
+    margin-bottom: 7.2rem;
   }
 
   & > * {
-    margin-bottom: 7.2rem;
+    // margin-bottom: 7.2rem;
   }
 
   &__row {
@@ -103,7 +140,7 @@
   & .btn {
     height: unset;
     padding: 2.4rem 3.2rem;
-    text-transform: capitalize;
+    text-transform: none;
     background-color: $color-tertiary;
     margin-top: 3.2rem;
     width: 20%;
@@ -114,7 +151,8 @@
   }
 
   @media (min-width: 320px) and (max-width: 576px) {
-    padding: 0 2.4rem 2.4rem 2.4rem;
+    margin-top: -10rem;
+    padding: 0 2.4rem 5.6rem 2.4rem;
     &__row {
       flex-direction: column;
       margin-bottom: 0;
@@ -127,7 +165,14 @@
       }
     }
     & .btn {
-      width: 100%;
+      width: 60%;
+      font-weight: 400;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 375px) {
+    & .btn {
+      width: 80%;
       font-weight: 400;
     }
   }
@@ -136,9 +181,13 @@
 .bg {
   display: flex;
   flex-direction: column;
-  padding: 9.6rem 16rem;
+  padding: 9.6rem 16rem 7.2rem 16rem;
   background-color: #fafcff;
   align-items: center;
+  & .heading-2 {
+    color: $color-secondary;
+    font-size: 4.6rem;
+  }
   &__row {
     margin-top: 4.8rem;
     display: flex;
@@ -198,8 +247,12 @@
 .no-bg {
   display: flex;
   flex-direction: column;
-  padding: 9.6rem 16rem;
+  padding: 9.6rem 16rem 7.2rem 16rem;
   align-items: center;
+  & .heading-2 {
+    color: $color-secondary;
+    font-size: 4.6rem;
+  }
   &__row {
     margin-top: 4.8rem;
     display: flex;
@@ -260,10 +313,10 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 0 0 7.2rem 0;
+  padding: 4.8rem 0 9.6rem 0;
   & .btn {
     height: unset;
-    text-transform: capitalize;
+    text-transform: none;
     font-weight: 300;
     background-color: $color-tertiary;
     padding: 2.4rem 4.8rem;
@@ -306,6 +359,10 @@
     & .heading-3 {
       color: $color-secondary;
     }
+    & .paragraph {
+      width: 100%;
+      text-align: left;
+    }
     & img {
       width: 100%;
     }
@@ -343,9 +400,6 @@
     width: 0px;
     background: transparent;
   }
-  &::-webkit-scrollbar-thumb {
-    // background: #ff0000;
-  }
 
   &__content {
     display: flex;
@@ -361,6 +415,10 @@
     }
     & .heading-3 {
       color: $color-secondary;
+    }
+    & .paragraph {
+      width: 100%;
+      text-align: left;
     }
     & img {
       width: 100%;
@@ -418,6 +476,10 @@
     & .heading-3 {
       color: $color-secondary;
     }
+    & .paragraph {
+      width: 100%;
+      text-align: left;
+    }
     & img {
       width: 100%;
     }
@@ -473,6 +535,10 @@
     }
     & .heading-3 {
       color: $color-secondary;
+    }
+    & .paragraph {
+      width: 100%;
+      text-align: left;
     }
     & img {
       width: 100%;

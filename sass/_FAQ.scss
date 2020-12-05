@@ -20,8 +20,11 @@
     z-index: -2;
   }
 
-  // &__content {
-  // }
+  &__content {
+    & .heading-1 {
+      color: $color-secondary;
+    }
+  }
   &__decor-1 {
     z-index: -2;
     left: 0;
@@ -73,14 +76,16 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    &__section {
+    &__select {
       height: 4.8rem;
       width: 45%;
-      padding: 0 0.8rem;
+      padding: 0 1.6rem;
       background: #eeeeee;
       outline: none;
       border: none;
       font-family: $font-primary;
+      -webkit-appearance: none;
+      -moz-appearance: none;
     }
     &__input {
       height: 4.8rem;
@@ -111,10 +116,10 @@
 
 .faq-card {
   &__row {
-    padding: 7.2rem 16rem;
+    margin: 4.8rem 0;
+    padding: 0rem 16rem;
     display: flex;
     justify-content: space-between;
-    margin-top: 4.8rem;
     &__card {
       width: 20%;
       & img {
@@ -148,4 +153,111 @@
 
 .grey-bg {
   background-color: #fafafa;
+  padding: 4.8rem 16rem;
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 5.6rem 2.4rem;
+    flex-direction: column;
+    &__card {
+      width: 100%;
+      margin-bottom: 3.2rem;
+    }
+  }
+}
+
+.faq-brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.8rem 16rem;
+  width: 100%;
+  &__caption {
+    margin-bottom: 2.4rem;
+    & .heading-5 {
+      font-weight: 400;
+    }
+  }
+
+  & .swiper-container {
+    width: 100%;
+    & .swiper-wrapper {
+      & .swiper-slide {
+        // width: 15% !important;
+      }
+    }
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 0.8rem 10rem 5.6rem 10rem;
+  }
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 2.4rem;
+    margin-top: -10rem;
+    & .swiper-container {
+      padding-bottom: 3.2rem;
+    }
+  }
+}
+
+#faq-modal {
+  visibility: hidden;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10rem;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  & .swiper-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    z-index: 10;
+    & .swiper-wrapper {
+      height: auto;
+      // width: 100%;
+      & .swiper-slide {
+        height: auto;
+        // width: 100%;
+        display: flex;
+        justify-content: center;
+        & img {
+          height: 54rem;
+          width: 54rem;
+        }
+      }
+    }
+
+    & .swiper-pagination {
+      background-color: red;
+      z-index: 3;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 375px) {
+    padding: 15rem 2.4rem 2.4rem 2.4rem;
+  }
+  @media (min-width: 320px) and (max-width: 576px) {
+    padding: 25rem 2.4rem 2.4rem 2.4rem;
+    & .swiper-container {
+      width: 100%;
+      & .swiper-wrapper {
+        & .swiper-slide {
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
 }
