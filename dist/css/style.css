@@ -63,7 +63,7 @@ html {
       font-size: 50%; } }
   @media all and (min-width: 1024px) and (max-width: 1280px) {
     html {
-      font-size: 52.5%; } }
+      font-size: 52.5% !important; } }
   @media all and (min-width: 1280px) and (max-width: 1440px) {
     html {
       font-size: 60%; } }
@@ -412,10 +412,12 @@ body {
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     .header {
       padding: 0.8rem 10rem; }
-      .header__bg-img:last-of-type {
-        padding-left: 9rem; }
+      .header__bg-img:nth-of-type(2) {
+        padding-left: 8rem; }
       .header__img {
-        right: 10rem; } }
+        right: 10rem; }
+      .header__content .heading-1 {
+        font-size: 4rem; } }
   @media (min-width: 320px) and (max-width: 576px) {
     .header {
       padding: 0 2.4rem;
@@ -449,7 +451,10 @@ body {
     width: 100%; }
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     .brands {
-      padding: 0.8rem 10rem 5.6rem 10rem; } }
+      padding: 3.2rem 10rem 0rem 10rem; }
+      .brands .swiper-container {
+        padding-top: 0;
+        padding-bottom: 4.8rem; } }
   @media (min-width: 320px) and (max-width: 576px) {
     .brands {
       padding: 2.4rem; }
@@ -497,7 +502,9 @@ body {
     opacity: 0.7; }
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     .banner {
-      padding: 10rem 10rem; } }
+      padding: 10rem 10rem; }
+      .banner__one .heading-1 {
+        font-size: 4rem; } }
   @media (min-width: 320px) and (max-width: 576px) {
     .banner {
       padding: 7.2rem 4rem;
@@ -588,10 +595,12 @@ body {
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     .services {
       padding: 10rem 10rem; }
+      .services .heading-1 {
+        font-size: 5rem; }
       .services__cards__card {
         width: 22%; }
         .services__cards__card__container {
-          padding: 1.6rem; }
+          padding: 4.8rem 1.6rem; }
           .services__cards__card__container__icon {
             height: 8rem;
             width: 8rem; }
@@ -695,6 +704,8 @@ body {
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     .testimonies__caption {
       padding: 0 10rem; }
+      .testimonies__caption .heading-1 {
+        font-size: 5rem; }
     .testimonies__row {
       padding-left: 10rem; }
       .testimonies__row .swiper-container .swiper-wrapper .swiper-slide .slide-image {
@@ -797,7 +808,9 @@ body {
       margin-right: 1.6rem; }
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     .aims {
-      padding: 16rem 10rem; } }
+      padding: 16rem 10rem; }
+      .aims__text .heading-1 {
+        font-size: 5rem; } }
   @media (min-width: 320px) and (max-width: 576px) {
     .aims {
       padding: 7.2rem 2.4rem; }
@@ -870,7 +883,9 @@ body {
         margin-bottom: 0.8rem; }
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     .team {
-      padding: 9rem 10rem 4rem 10rem; } }
+      padding: 9rem 10rem 4rem 10rem; }
+      .team .heading-1 {
+        font-size: 5rem; } }
   @media (min-width: 320px) and (max-width: 576px) {
     .team {
       padding: 7.2rem 2.4rem;
@@ -951,7 +966,9 @@ body {
           background-color: #000000; }
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     .blog {
-      padding: 12rem 10rem 25rem 10rem; } }
+      padding: 12rem 10rem 25rem 10rem; }
+      .blog .heading-1 {
+        font-size: 5rem; } }
   .blog__image__1 {
     position: absolute;
     z-index: -1;
