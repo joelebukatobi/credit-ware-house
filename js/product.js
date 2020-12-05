@@ -11,7 +11,6 @@ let mpLink = document.getElementById('mp-link');
 let avLink = document.getElementById('av-link');
 
 // When the user clicks the button, open the modal
-
 cmLink.addEventListener('click', () => {
   cmModal.style.display = 'block';
   // console.log(modal);
@@ -31,6 +30,7 @@ avLink.addEventListener('click', () => {
   avModal.style.display = 'block';
   // console.log(modal);
 });
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == cmModal) {
