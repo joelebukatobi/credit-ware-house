@@ -48,7 +48,6 @@ let swiper = new Swiper('.testimonies__carousel', {
   autoplay: {
     delay: 5000,
   },
-  loop: true,
 });
 
 const brand = () => {
@@ -68,4 +67,16 @@ const brand = () => {
 
 viewPort = window.matchMedia('(max-width: 576px)');
 brand(viewPort);
-// viewPort.addListener(brands);
+
+let typed = new Typed('.type', {
+  strings: [
+    'helps you sign agreements for the loans you give to friends and family',
+    'helps you sign agreements for the services you offer to clients on credit',
+    'helps you prove that you are credit worthy to institutional lenders in the future',
+    'helps you document your repayment habits',
+    'helps you prove you are eligible for those loans',
+    'helps you automatically follow up on recovery when your loans are due',
+    'helps you inform authorities of bad creditors without the bureaucratic constraints',
+  ],
+  typeSpeed: 70,
+});
