@@ -193,7 +193,7 @@
     padding: 10rem 10rem;
     &__one {
       & .heading-1 {
-        font-size: 4rem;
+        font-size: 5rem;
       }
     }
   }
@@ -244,7 +244,7 @@
 
   & .paragraph {
     font-size: 2rem;
-    & a {
+    & span {
       color: $color-primary;
     }
   }
@@ -292,7 +292,7 @@
           justify-content: center;
         }
 
-        & .heading-3 & .paragraph {
+        & .heading-3 {
           color: #2f3d50;
         }
         & > * {
@@ -421,13 +421,19 @@
               bottom: 3.2rem;
               display: flex;
               flex-direction: column;
+              & .paragraph {
+                color: $color-white;
+                margin-left: 4rem;
+              }
               & .swiper-pagination-bullet {
-                width: 2rem;
+                width: 2em;
                 height: 2rem;
                 background: transparent;
                 border: 0.2rem solid $color-white;
                 opacity: 1;
                 margin-bottom: 2.4rem;
+                display: flex;
+                align-items: center;
               }
 
               & .swiper-pagination-bullet-active {
@@ -517,7 +523,23 @@
     }
   }
 
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media all and (min-width: 1280px) and (max-width: 1440px) {
+    &__row {
+      & .swiper-container {
+        & .swiper-wrapper {
+          & .swiper-slide {
+            & .slide-text {
+              & .swiper-pagination {
+                bottom: 7.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 320px) and (max-width: 576px) {
     padding: 7.2rem 0 0 0;
     &__caption {
       padding: 0 2.4rem;
@@ -527,7 +549,7 @@
       padding-left: 0rem;
       margin-top: 2.4rem;
       padding-bottom: 0;
-      height: unset;
+      height: auto;
       &::after {
         clip-path: unset;
       }
@@ -545,11 +567,19 @@
             }
             & .slide-text {
               padding: 2.4rem;
-              // height: 100%;
+              & .quote {
+                margin-bottom: 0.8rem;
+              }
+              & .heading-4 {
+                margin-bottom: 1.6rem;
+              }
               & .swiper-pagination {
-                flex-direction: row;
-                bottom: 7.2rem;
+                position: unset;
+                flex-direction: column;
+                bottom: 0rem;
                 & .swiper-pagination-bullet {
+                  width: 1rem;
+                  height: 1rem;
                 }
 
                 & .swiper-pagination-bullet-active {
@@ -565,6 +595,34 @@
       }
       &__decor-2 {
         display: none;
+      }
+    }
+  }
+
+  @media all and (min-width: 320px) and (max-width: 375px) {
+    &__row {
+      & .swiper-container {
+        & .swiper-wrapper {
+          & .swiper-slide {
+            & .slide-text {
+              padding: 1.6rem 2.4rem;
+              & .quote {
+                height: 1.6rem;
+                width: 1.6rem;
+              }
+              & .heading-4 {
+                margin-bottom: 1.6rem;
+              }
+              & .swiper-pagination {
+                & .swiper-pagination-bullet {
+                  width: 0.8rem;
+                  height: 0.8rem;
+                  margin-bottom: 1.6rem;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -3,6 +3,7 @@ let cmModal = document.getElementById('cm-modal');
 let csModal = document.getElementById('cs-modal');
 let mpModal = document.getElementById('mp-modal');
 let avModal = document.getElementById('av-modal');
+let closeModal = document.getElementsByClassName('close');
 
 // Get the button that opens the modal
 let cmLink = document.getElementById('cm-link');
@@ -33,13 +34,13 @@ avLink.addEventListener('click', () => {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == cmModal) {
+  if (event.target == cmModal || event.target == closeModal[0]) {
     cmModal.style.display = 'none';
-  } else if (event.target == csModal) {
+  } else if (event.target == csModal || event.target == closeModal[1]) {
     csModal.style.display = 'none';
-  } else if (event.target == mpModal) {
+  } else if (event.target == mpModal || event.target == closeModal[2]) {
     mpModal.style.display = 'none';
-  } else if (event.target == avModal) {
+  } else if (event.target == avModal || event.target == closeModal[3]) {
     avModal.style.display = 'none';
   }
 };
