@@ -46,7 +46,7 @@ let swiper = new Swiper('.testimonies__carousel', {
     clickable: true,
   },
   autoplay: {
-    delay: 5000,
+    delay: 4000,
   },
 });
 
@@ -79,4 +79,6 @@ let typed = new Typed('.type', {
     'helps you inform authorities of bad creditors without the bureaucratic constraints',
   ],
   typeSpeed: 70,
+  loop: true,
+  loopCount: Infinity,
 });

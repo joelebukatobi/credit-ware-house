@@ -44,6 +44,9 @@
         list-style: none;
         // float: left;
         padding: 0 0 0 4.8rem;
+        // &:hover {
+        //   border-bottom: 0.16rem solid $color-primary;
+        // }
         & .active {
           color: $color-primary;
           & .btn {
@@ -56,11 +59,19 @@
           font-weight: 500;
           color: $color-black;
           text-transform: uppercase;
+          &:hover {
+            border-bottom: 0.2rem solid $color-primary;
+            padding-bottom: 0.4rem;
+          }
           & .btn {
             &__light {
               border: 0.1rem solid $color-primary;
               background-color: $color-primary-light;
               color: $color-primary;
+              &:hover {
+                background-color: $color-primary;
+                color: $color-white;
+              }
             }
             font-size: 1.2rem;
             text-transform: uppercase;
@@ -363,7 +374,7 @@
     }
 
     &__bottom {
-      flex-direction: column-reverse;
+      flex-direction: column;
       align-items: flex-start;
       & > * {
         margin-bottom: 2.4rem;
