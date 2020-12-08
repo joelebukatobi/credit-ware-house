@@ -646,7 +646,7 @@
     z-index: -1;
     top: 5rem;
     right: 25rem;
-    animation: rotation 6s infinite linear;
+    animation: rotation 5s infinite linear;
   }
   &__img-2 {
     position: absolute;
@@ -660,7 +660,7 @@
     z-index: -1;
     right: 15rem;
     top: 40rem;
-    animation: anti-rotation 6s infinite linear;
+    animation: anti-rotation 5s infinite linear;
     // border: 2px solid red;
   }
 
@@ -761,7 +761,7 @@
   &__row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 7.2rem;
+    margin-bottom: 4.8rem;
     &__card {
       display: flex;
       flex-direction: column;
@@ -784,6 +784,9 @@
         & .card-link {
           display: none;
         }
+      }
+      & .paragraph {
+        text-align: center;
       }
       &__image {
         border-radius: 2.4rem;

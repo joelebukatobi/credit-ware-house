@@ -62,6 +62,7 @@
           &:hover {
             border-bottom: 0.2rem solid $color-primary;
             padding-bottom: 0.4rem;
+            color: $color-primary;
           }
           & .btn {
             &__light {
