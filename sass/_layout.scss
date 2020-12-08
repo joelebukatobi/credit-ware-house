@@ -327,15 +327,22 @@
 
   &__bottom {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 3.2rem;
     &__logo {
       width: 20%;
     }
-    &__col {
-      & .paragraph {
-        color: $color-white;
-        font-weight: 300;
+    &__sm {
+      display: flex;
+      &__icon {
+        background-color: $color-primary;
+        padding: 2.4rem;
+        border-radius: 100%;
+        margin-right: 2.4rem;
+        &:last-child {
+          margin-right: 0rem;
+        }
       }
     }
   }
