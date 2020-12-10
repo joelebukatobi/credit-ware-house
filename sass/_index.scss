@@ -1,6 +1,6 @@
 .header {
   padding: 0.8rem 16rem;
-  height: 80vh;
+  height: 88vh;
   overflow-y: hidden;
   position: relative;
   top: -10rem;
@@ -32,7 +32,6 @@
     & .heading-1 {
       color: $color-secondary;
       margin-bottom: 0.8rem;
-      font-size: 4.6rem;
     }
 
     & .paragraph {
@@ -141,7 +140,7 @@
   position: relative;
   width: 100%;
   &__one {
-    width: 65%;
+    width: 60%;
     & > * {
       margin-bottom: 2.4rem;
     }
@@ -162,15 +161,15 @@
     position: relative;
     z-index: 1;
     & .heading-3 {
-      font-weight: 400;
+      font-weight: 300;
       font-size: 2.6rem;
     }
   }
 
   &__img-1 {
     position: absolute;
-    top: 15rem;
-    right: 10rem;
+    top: 17rem;
+    right: 7rem;
     transform: scaleY(-1);
     opacity: 0.7;
     // z-index: -1;
@@ -230,7 +229,7 @@
     position: absolute;
     top: 15rem;
     left: 20%;
-    z-index: 2;
+    // z-index: 2;
   }
   &__image__2 {
     position: absolute;
@@ -272,7 +271,6 @@
       & > * {
         margin-bottom: 1.6rem;
       }
-
       &__container {
         background-color: $color-grey;
         display: flex;
@@ -290,6 +288,9 @@
         &:hover {
           -webkit-transform: scale(1.1);
           transform: scale(1.1);
+        }
+        &__paragraph {
+          font-weight: 300;
         }
         &__icon {
           background-color: $color-primary;
@@ -468,9 +469,10 @@
     &__decor-1 {
       position: absolute;
       bottom: 7.2rem;
-      right: 0rem;
-      opacity: 0.1;
+      right: 5rem;
+      opacity: 0.15;
       z-index: 3;
+      animation: rotation 3s infinite linear;
     }
     &__decor-2 {
       position: absolute;
@@ -494,7 +496,7 @@
         & .swiper-wrapper {
           & .swiper-slide {
             .slide-image {
-              height: 100%;
+              height: 102%;
             }
             & .slide-text {
               padding: 3.2rem 10rem 3.2rem 3.2rem;
@@ -684,12 +686,12 @@
 
   &__text {
     // position: relative;
-    width: 72rem;
+    width: 80%;
 
     & > * {
       margin-bottom: 1.6rem;
     }
-    & .paragraph {
+    &__paragraph {
       display: flex;
       align-items: center;
     }
@@ -723,6 +725,12 @@
     }
     &__text {
       width: 100%;
+      & .paragraph {
+        align-items: center;
+        & strong {
+          flex-grow: 1;
+        }
+      }
     }
   }
 }
@@ -767,24 +775,24 @@
       flex-direction: column;
       align-items: center;
       width: 25%;
-      cursor: pointer;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: 0.5s ease-in-out;
-      transition: 0.5s ease-in-out;
-      &:hover {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-        & .heading-4 {
-          display: none;
-        }
-        & .paragraph {
-          display: none;
-        }
-        & .card-link {
-          display: none;
-        }
-      }
+      // cursor: pointer;
+      // -webkit-transform: scale(1);
+      // transform: scale(1);
+      // -webkit-transition: 0.5s ease-in-out;
+      // transition: 0.5s ease-in-out;
+      // &:hover {
+      //   -webkit-transform: scale(1.5);
+      //   transform: scale(1.5);
+      //   & .heading-4 {
+      //     display: none;
+      //   }
+      //   & .paragraph {
+      //     display: none;
+      //   }
+      //   & .card-link {
+      //     display: none;
+      //   }
+      // }
       & .paragraph {
         text-align: center;
       }

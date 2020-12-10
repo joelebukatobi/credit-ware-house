@@ -42,11 +42,7 @@
 
       &__item {
         list-style: none;
-        // float: left;
         padding: 0 0 0 4.8rem;
-        // &:hover {
-        //   border-bottom: 0.16rem solid $color-primary;
-        // }
         & .active {
           color: $color-primary;
           & .btn {
@@ -180,6 +176,11 @@
 
           &__link {
             font-size: 1.8rem;
+            &:hover {
+              border-bottom: none;
+              padding-bottom: 0;
+              color: unset;
+            }
             & .btn,
             .btn-light {
               padding: 0;
@@ -189,6 +190,10 @@
               font-weight: 500;
               font-family: $font-primary;
               border: none;
+              &:hover {
+                background-color: transparent;
+                color: $color-primary;
+              }
             }
           }
         }
@@ -349,7 +354,7 @@
       display: flex;
       &__icon {
         background-color: $color-primary;
-        padding: 2.4rem;
+        padding: 1.6rem;
         border-radius: 100%;
         margin-right: 2.4rem;
         &:last-child {

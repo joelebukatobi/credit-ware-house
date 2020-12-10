@@ -46,7 +46,7 @@ let swiper = new Swiper('.testimonies__carousel', {
     clickable: true,
   },
   autoplay: {
-    delay: 4000,
+    delay: 5000,
   },
 });
 
