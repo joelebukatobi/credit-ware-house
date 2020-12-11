@@ -55,12 +55,12 @@
        <ul class="navbar__nav__list">
         <li class="navbar__nav__list__item">
           <a class="navbar__nav__list__item__link" href="#">
-            <button class="btn btn__light">Login</button>
+            <button class="btn btn__light">Log In</button>
           </a>
          </li>
          <li class="navbar__nav__list__item">
            <a class="navbar__nav__list__item__link" href="#">
-             <button class="btn">Create an account</button>
+             <button class="btn">Sign Up</button>
            </a>
          </li>
        </ul>
@@ -86,13 +86,16 @@
    <!-- Categories -->
    <div class="categories">
     <form class="categories__form">
-      <select class="categories__form__select" id="cars" name="cars">
-        <option value="">CATEGORIES</option>
-        <option value="">Contract Manager</option>
-        <option value="">Market Place</option>
-        <option value="">Connector Service</option>
-        <option value="">Agent Verification</option>
-      </select>
+      <div class="categories__form__group">
+        <select class="categories__form__group__select" id="cars" name="cars">
+          <option value="">CATEGORIES</option>
+          <option value="">Contract Manager</option>
+          <option value="">Market Place</option>
+          <option value="">Connector Service</option>
+          <option value="">Agent Verification</option>
+        </select>
+        <img class="categories__form__group__image" src="images/icon-chevron-down.svg" alt="">
+      </div>
       <input class="categories__form__input" type="text" placeholder="KEY WORD SEARCH">
     </form>
    </div>
@@ -101,7 +104,7 @@
    <div class="faq-card">
     <div class="faq-card__row">
      <div class="faq-card__row__card" id="faq-card">
-      <img src="images/faq-card.png" alt="">
+      <img src="images/faq-1.jpg" alt="">
       <h5 class="heading-5">Category:</h5>
       <h5 class="heading-5">Key Words:</h5>
      </div>
@@ -192,11 +195,9 @@
           <img src="images/faq-7.jpg" alt="">
         </div>
       </div>
-      <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next" id="next"></div>
-          <div class="swiper-button-prev" id="prev"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next" id="next"></div>
+      <div class="swiper-button-prev" id="prev"></div>
     </div>
   </div>
 

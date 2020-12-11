@@ -47,15 +47,12 @@ function openMenu() {
 }
 
 var faqModalSwiper = new Swiper('.faq-modal-swiper', {
-  loop: true,
   spaceBetween: 0,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  autoplay: {
-    delay: 2000,
-  },
+  loop: true,
 });
 
 var brandsSwiper = new Swiper('.faq-brands__carousel', {
@@ -84,8 +81,8 @@ const brand = () => {
       },
     });
   }
-  next.style.display = 'none';
-  prev.style.display = 'none';
+  // next.style.display = 'none';
+  // prev.style.display = 'none';
 };
 
 viewPort = window.matchMedia('(max-width: 576px)');
