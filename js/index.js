@@ -41,7 +41,6 @@ var brandsSwiper = new Swiper('.brands__carousel', {
 
 let swiper = new Swiper('.testimonies__carousel', {
   direction: 'vertical',
-  loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -50,8 +49,8 @@ let swiper = new Swiper('.testimonies__carousel', {
     delay: 5000,
   },
   followFinger: true,
-  // touchReleaseOnEdges: true,
-  allowTouchMove: false,
+  touchReleaseOnEdges: true,
+  // allowTouchMove: false,
 });
 
 const brand = () => {

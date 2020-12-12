@@ -477,8 +477,12 @@ body {
       font-weight: 400; }
   .brands .swiper-container {
     width: 100%; }
-    .brands .swiper-container .swiper-wrapper .swiper-slide img {
-      width: 80%; }
+    .brands .swiper-container .swiper-wrapper {
+      height: auto; }
+      .brands .swiper-container .swiper-wrapper .swiper-slide {
+        height: auto; }
+        .brands .swiper-container .swiper-wrapper .swiper-slide img {
+          width: 80%; }
   @media (min-width: 1024px) and (max-width: 1440px) {
     .brands {
       padding: 3.2rem 10rem 0rem 10rem; }
