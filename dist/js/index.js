@@ -48,6 +48,9 @@ let swiper = new Swiper('.testimonies__carousel', {
   autoplay: {
     delay: 5000,
   },
+  followFinger: true,
+  touchReleaseOnEdges: true,
+  // allowTouchMove: false,
 });
 
 const brand = () => {
