@@ -450,10 +450,15 @@ body {
         right: 0rem;
         display: none; }
       .header__bg-img {
-        height: 100rem;
-        width: 100rem; }
+        height: 120rem;
+        width: 120rem; }
         .header__bg-img:nth-of-type(2) {
-          display: none; }
+          display: none;
+          bottom: 3.2rem;
+          height: 20rem;
+          width: 100%;
+          padding: 1.6rem;
+          opacity: 0.1; }
       .header__content {
         margin-top: 5rem; }
         .header__content .btn {
@@ -472,6 +477,8 @@ body {
       font-weight: 400; }
   .brands .swiper-container {
     width: 100%; }
+    .brands .swiper-container .swiper-wrapper .swiper-slide img {
+      width: 80%; }
   @media (min-width: 1024px) and (max-width: 1440px) {
     .brands {
       padding: 3.2rem 10rem 0rem 10rem; }
@@ -480,11 +487,15 @@ body {
         padding-bottom: 4.8rem; } }
   @media (min-width: 320px) and (max-width: 576px) {
     .brands {
-      margin-top: 0;
-      padding: 2.4rem;
-      border: 2px solid red; }
+      margin-top: -10rem;
+      margin-bottom: 3.2rem;
+      padding: 2.4rem; }
       .brands .swiper-container {
-        padding-bottom: 4.8rem; } }
+        padding-bottom: 4.8rem; }
+        .brands .swiper-container .swiper-wrapper {
+          height: 0; }
+          .brands .swiper-container .swiper-wrapper .swiper-slide {
+            height: 0; } }
 
 .banner {
   padding: 10rem 16rem;
