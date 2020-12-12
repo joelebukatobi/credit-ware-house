@@ -116,8 +116,10 @@
   & .swiper-container {
     width: 100%;
     & .swiper-wrapper {
+      height: auto;
       & .swiper-slide {
         // width: 15% !important;
+        height: auto;
         & img {
           width: 80%;
         }
