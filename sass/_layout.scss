@@ -21,8 +21,12 @@
     &__logo {
       display: inline-block;
       margin: 0;
+      position: relative;
+      z-index: 2;
       &__link {
         &__image {
+          width: 16.1rem;
+          height: 7.9rem;
         }
       }
     }
@@ -78,7 +82,7 @@
     }
   }
 
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     display: block;
     padding: 0;
     &__mobile {
@@ -368,7 +372,7 @@
     padding: 10rem;
   }
 
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 2.4rem;
 
     &__row {

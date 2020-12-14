@@ -47,7 +47,13 @@
       right: -5rem;
     }
   }
-  @media (min-width: 320px) and (max-width: 576px) {
+
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    height: 25vh;
+    padding-top: 10rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 0 2.4rem;
     &__decor-1 {
       display: none;
@@ -112,7 +118,7 @@
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     padding: 7.2rem 10rem;
   }
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 5.6rem 2.4rem;
     &__form {
       &__section {
@@ -149,7 +155,7 @@
     @media all and (min-width: 1024px) and (max-width: 1440px) {
       padding: 7.2rem 10rem;
     }
-    @media (min-width: 320px) and (max-width: 576px) {
+    @media (min-width: 320px) and (max-width: 768px) {
       padding: 7.2rem 2.4rem;
       flex-direction: column;
       margin-top: 3.2rem;
@@ -163,8 +169,7 @@
 
 .grey-bg {
   background-color: #fafafa;
-  padding: 4.8rem 16rem;
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 5.6rem 2.4rem;
     flex-direction: column;
     &__card {
@@ -199,7 +204,7 @@
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     padding: 0.8rem 10rem 5.6rem 10rem;
   }
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 2.4rem;
     margin-top: -10rem;
     & .swiper-container {
@@ -250,7 +255,7 @@
   @media (min-width: 320px) and (max-width: 375px) {
     padding: 15rem 2.4rem 2.4rem 2.4rem;
   }
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 25rem 2.4rem 2.4rem 2.4rem;
     & .swiper-container {
       width: 100%;

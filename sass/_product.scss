@@ -20,7 +20,7 @@
 
   &__img {
     position: absolute;
-    top: 0;
+    // top: -10rem;
     right: 0;
     width: 50%;
   }
@@ -48,12 +48,15 @@
         &:nth-of-type(2) {
           background-color: #c4c4c4;
           margin-left: 6.4rem;
+          &:hover {
+            background-color: $color-tertiary;
+          }
         }
       }
     }
   }
 
-  @media all and (min-width: 1024px) and (max-width: 1440px) {
+  @media (min-width: 1024px) and (max-width: 1440px) {
     padding: 0.8rem 10rem;
     &__img {
       width: 50%;
@@ -61,7 +64,12 @@
     }
   }
 
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    height: 80rem;
+    padding-top: 10rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 0.8rem 2.4rem;
     height: 100vh;
     padding: 0 2.4rem;
@@ -150,7 +158,11 @@
     padding: 0rem 10rem 5.6rem 10rem;
   }
 
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 1024px) and (max-width: 1366px) {
+    margin-top: -5rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
     margin-top: -10rem;
     padding: 0 2.4rem 5.6rem 2.4rem;
     &__row {
@@ -229,7 +241,7 @@
     padding: 9.6rem 10rem;
   }
 
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 7.2rem 2.4rem;
     &__row {
       flex-direction: column-reverse;
@@ -294,7 +306,7 @@
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     padding: 9.6rem 10rem;
   }
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 7.2rem 2.4rem;
     &__row {
       flex-direction: column;
@@ -372,7 +384,7 @@
       text-align: left;
       font-weight: 300;
     }
-    & img {
+    &__video {
       width: 100%;
     }
 
@@ -384,7 +396,7 @@
       text-transform: unset;
     }
   }
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 2.4rem;
     &__content {
       width: 100%;
@@ -454,7 +466,7 @@
       text-transform: unset;
     }
   }
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 2.4rem;
     &__content {
       width: 100%;
@@ -527,7 +539,7 @@
       text-transform: unset;
     }
   }
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 2.4rem;
     &__content {
       width: 100%;
@@ -600,7 +612,7 @@
       text-transform: unset;
     }
   }
-  @media (min-width: 320px) and (max-width: 576px) {
+  @media (min-width: 320px) and (max-width: 768px) {
     padding: 2.4rem;
     &__content {
       width: 100%;
