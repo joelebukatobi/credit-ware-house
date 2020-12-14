@@ -361,6 +361,10 @@
         padding: 1.6rem;
         border-radius: 100%;
         margin-right: 2.4rem;
+        &__image {
+          height: 2.4rem;
+          width: 2.4rem;
+        }
         &:last-child {
           margin-right: 0rem;
         }

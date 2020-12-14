@@ -373,6 +373,9 @@ body {
         padding: 1.6rem;
         border-radius: 100%;
         margin-right: 2.4rem; }
+        .footer__bottom__sm__icon__image {
+          height: 2.4rem;
+          width: 2.4rem; }
         .footer__bottom__sm__icon:last-child {
           margin-right: 0rem; }
   @media all and (min-width: 1024px) and (max-width: 1440px) {
