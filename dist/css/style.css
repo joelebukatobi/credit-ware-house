@@ -1635,7 +1635,6 @@ body {
         right: -5rem; } }
   @media (min-width: 1024px) and (max-width: 1366px) {
     .faq {
-      height: 25vh;
       padding-top: 10rem; } }
   @media (min-width: 320px) and (max-width: 768px) {
     .faq {
