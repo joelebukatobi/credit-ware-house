@@ -7,6 +7,8 @@ let barRight = document.querySelector(
   '.navbar__mobile__menu__bar:nth-child(3)'
 );
 let brands = document.querySelector('.brands');
+const serviceLink = document.getElementById('service-link');
+const service = document.getElementById('service');
 
 menuButton.onclick = openMenu;
 
@@ -32,7 +34,7 @@ var brandsSwiper = new Swiper('.brands__carousel', {
   // loop: true,
   // loopFillGroupWithBlank: true,
   autoplay: {
-    delay: 2000,
+    delay: 4000,
   },
   pagination: {
     clickable: true,
@@ -48,9 +50,11 @@ let swiper = new Swiper('.testimonies__carousel', {
   autoplay: {
     delay: 5000,
   },
+  // loop: true,
+  // loopFillGroupWithBlank: true,
   followFinger: true,
   touchReleaseOnEdges: true,
-  // allowTouchMove: false,
+  allowTouchMove: false,
 });
 
 const brand = () => {
@@ -84,4 +88,17 @@ let typed = new Typed('.type', {
   typeSpeed: 70,
   loop: true,
   loopCount: Infinity,
+});
+
+$("a[href^='#']").click(function (e) {
+  e.preventDefault();
+
+  var position = $($(this).attr('href')).offset().top;
+
+  $('body, html').animate(
+    {
+      scrollTop: position,
+    },
+    700
+  );
 });

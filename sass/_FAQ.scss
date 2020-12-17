@@ -97,6 +97,9 @@
         font-family: $font-primary;
         -webkit-appearance: none;
         -moz-appearance: none;
+        & option {
+          text-transform: uppercase;
+        }
       }
       &__image {
         position: absolute;

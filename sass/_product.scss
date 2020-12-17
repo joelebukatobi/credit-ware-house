@@ -1,5 +1,5 @@
 .product-header {
-  padding: 0.8rem 16rem;
+  padding: 4rem 16rem 0.8rem 16rem;
   height: 100vh;
   overflow-y: hidden;
   position: relative;
@@ -30,7 +30,10 @@
     width: 72rem;
     // height: 50%;
     & > * {
-      margin-bottom: 4.8rem;
+      margin-bottom: 3.2rem;
+      &:first-child {
+        margin-bottom: 0.8rem;
+      }
     }
 
     & .heading-1 {
@@ -120,10 +123,7 @@
     text-align: center;
     color: $color-secondary;
     margin-bottom: 7.2rem;
-  }
-
-  & > * {
-    // margin-bottom: 7.2rem;
+    font-size: 4.6rem;
   }
 
   &__row {
@@ -133,12 +133,11 @@
     margin-bottom: 9.6rem;
     &__col {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       width: 33.3% !important;
-      & .heading-4 {
+      & .paragraph-2 {
         width: 60%;
         margin-left: 2.4rem;
-        font-weight: 400;
       }
       &:last-of-type {
         flex-grow: 1;
