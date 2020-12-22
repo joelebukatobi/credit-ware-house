@@ -1,3 +1,6 @@
+// Mobile  View Menu
+// --------------------------------------------------------
+
 let menuButton = document.querySelector('.navbar__mobile__menu');
 let navItems = document.querySelector('.navbar__nav');
 let header = document.querySelector('.navbar');
@@ -6,6 +9,7 @@ let barLeft = document.querySelector('.navbar__mobile__menu__bar:nth-child(2)');
 let barRight = document.querySelector(
   '.navbar__mobile__menu__bar:nth-child(3)'
 );
+viewPort = window.matchMedia('(max-width: 576px)');
 
 menuButton.onclick = openMenu;
 
@@ -25,6 +29,11 @@ function openMenu() {
   }
 }
 
+// End Mobile  View Menu
+// --------------------------------------------------------
+
+// Services Scroll
+
 $("a[href^='#']").click(function (e) {
   e.preventDefault();
 
@@ -38,6 +47,10 @@ $("a[href^='#']").click(function (e) {
   );
 });
 
+// End Services Scroll
+// --------------------------------------------------------
+
+// Brands Carousel
 var brandsSwiper = new Swiper('.brands__carousel', {
   slidesPerView: 6,
   spaceBetween: 2,
@@ -51,6 +64,25 @@ var brandsSwiper = new Swiper('.brands__carousel', {
   },
 });
 
+const brands = () => {
+  if (viewPort.matches) {
+    var brandsSwiper = new Swiper('.brands__carousel', {
+      slidesPerView: 2,
+      spaceBetween: 1,
+      autoplay: {
+        delay: 2000,
+      },
+      pagination: {
+        clickable: true,
+      },
+    });
+  }
+};
+// End Brands Carousel
+// --------------------------------------------------------
+brands(viewPort);
+
+// Testimonials Carousel
 let swiper = new Swiper('.testimonies__carousel', {
   direction: 'vertical',
   pagination: {
@@ -66,7 +98,10 @@ let swiper = new Swiper('.testimonies__carousel', {
   touchReleaseOnEdges: true,
   allowTouchMove: false,
 });
+// End Testimonials Carousel
+// --------------------------------------------------------
 
+// Product Modals
 // Get the modal
 let cmModal = document.getElementById('cm-modal');
 let csModal = document.getElementById('cs-modal');
@@ -116,6 +151,10 @@ if (cmModal) {
   };
 }
 
+// End Product Modals
+// --------------------------------------------------------
+
+// FAQ Modals
 // Get the modal
 let faqModal = document.getElementById('faq-modal');
 
@@ -137,6 +176,10 @@ window.onclick = function (event) {
   }
 };
 
+// End FAQ Modals
+// --------------------------------------------------------
+
+// FAQ Carousel
 var faqModalSwiper = new Swiper('.faq-modal-swiper', {
   spaceBetween: 0,
   navigation: {
@@ -176,20 +219,10 @@ const faqBrand = () => {
   // prev.style.display = 'none';
 };
 
-const brands = () => {
-  if (viewPort.matches) {
-    var brandsSwiper = new Swiper('.brands__carousel', {
-      slidesPerView: 2,
-      spaceBetween: 1,
-      autoplay: {
-        delay: 2000,
-      },
-      pagination: {
-        clickable: true,
-      },
-    });
-  }
-};
+faqBrand(viewPort);
+
+// // End FAQ Carousel
+// ---------------------------------------------------------------
 
 let typed = new Typed('.type', {
   strings: [
@@ -205,7 +238,3 @@ let typed = new Typed('.type', {
   loop: true,
   loopCount: Infinity,
 });
-
-viewPort = window.matchMedia('(max-width: 576px)');
-brand(viewPort);
-faqBrand(viewPort);
